@@ -28,6 +28,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-main);
+    background-color: black;
 }
 
 img, picture, video, canvas, svg {
@@ -62,4 +63,8 @@ img {
     display: flex;
     justify-content: center;
     
+}
+
+h1 {
+    color: white;
 }

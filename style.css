@@ -1,3 +1,65 @@
+/* =========================================
+   1. CSS Variables (Your App's Theme)
+   ========================================= */
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #2d3436;
+    --primary-color: #0984e3;
+    --secondary-color: #00cec9;
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* =========================================
+   2. Modern CSS Reset
+   ========================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* =========================================
+   3. Base Layout (FlowSpace Specific)
+   ========================================= */
+.app-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-header {
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
 img {
-    width: 270;
+    width: 300vw;
+    display: flex;
+    justify-content: center;
+    
 }
